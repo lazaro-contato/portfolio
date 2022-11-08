@@ -1,26 +1,123 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        node: true
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+    'import/resolver': {
+      typescript: {
+        project: 'tsconfig.json',
+      },
     },
-    "plugins": [
-        "react",
-        "@typescript-eslint"
+  },
+  extends: [
+    'plugin:react/recommended',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+    'plugin:react-hooks/recommended',
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  plugins: [
+    'react',
+    '@typescript-eslint',
+    'import',
+    'react',
+    'import',
+    'no-null',
+    'const-case',
+    'prefer-arrow',
+    'unused-imports',
+  ],
+  rules: {
+    semi: ['error', 'never'],
+    'no-console': ['warn', {allow: ['warn', 'error']}],
+    'no-useless-escape': 'off',
+    'prefer-arrow/prefer-arrow-functions': [
+      'error',
+      {
+        disallowPrototype: true,
+        singleReturnOnly: false,
+        classPropertiesAllowed: false,
+      },
     ],
-    "rules": {
-    }
+    'react/jsx-wrap-multilines': 'off',
+    'no-underscore-dangle': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'react/jsx-one-expression-per-line': 'off',
+    'react/jsx-curly-newline': 'off',
+    'no-unused-expressions': ['error', {allowShortCircuit: true}],
+    'unused-imports/no-unused-imports': 'error',
+    'no-use-before-define': ['off'],
+    '@typescript-eslint/no-use-before-define': ['error'],
+    'prettier/prettier': [
+      'error',
+      {
+        semi: false,
+        singleQuote: true,
+        bracketSpacing: false,
+        bracketSameLine: true,
+        trailingComma: 'all',
+        arrowParens: 'avoid',
+      },
+    ],
+    'import/prefer-default-export': 'off',
+    'sort-keys': 'off',
+    'sort-imports': 'off',
+    'no-ternary': 'off',
+    'no-undefined': 'off',
+    'spaced-comment': 'off',
+    'no-null/no-null': 2,
+    'react/prop-types': 'off',
+    'no-magic-numbers': ['error', {ignore: [0, 1, -1]}],
+    'max-lines-per-function': 'off',
+    'multiline-comment-style': 'off',
+    'const-case/uppercase': 'error',
+    'init-declarations': 'off',
+    'import/extensions': 'off',
+    'react/jsx-closing-bracket-location': 'off',
+    'react/button-has-type': 'off',
+    'react/require-default-props': 'off',
+    'react/jsx-key': 'error',
+    'react/jsx-props-no-spreading': 'off',
+    'react/jsx-filename-extension': [
+      1,
+      {
+        extensions: ['.jsx', '.tsx'],
+      },
+    ],
+    'max-lines': ['warn', {max: 300, skipComments: true, skipBlankLines: true}],
+    '@typescript-eslint/ban-ts-comment': [
+      'error',
+      {
+        'ts-expect-error': 'allow-with-description',
+        'ts-ignore': false,
+        'ts-nocheck': true,
+        'ts-check': false,
+        minimumDescriptionLength: 5,
+      },
+    ],
+    'jsx-a11y/media-has-caption': 'off',
+    radix: 'off',
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': 'error',
+  },
+  overrides: [
+    {
+      files: ['src/store/**/*.ts'],
+      rules: {
+        'import/no-cycle': 'off',
+      },
+    },
+  ],
 }
