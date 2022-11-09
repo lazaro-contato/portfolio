@@ -1,0 +1,9 @@
+export const Constants = {
+  DEFAULT_TITLE_LABEL_SIZE: 18,
+
+  BOLD: 700,
+  SEMIBOLD: 600,
+  MEDIUM: 500,
+  REGULAR: 400,
+  LIGHT: 300,
+}
