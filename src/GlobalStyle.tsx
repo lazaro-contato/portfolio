@@ -14,8 +14,19 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Poppins', sans-serif;
-    background-color: ${Colors.grayLight};
+    background-color: ${Colors.white};
   }
+
+  button {
+    cursor: pointer;
+  }
+
+  a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+  }
+
 
   textarea {
     font-family: inherit;

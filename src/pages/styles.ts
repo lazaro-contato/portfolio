@@ -9,5 +9,9 @@ export const HomeLayout = styled.div`
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 0 20px;
+`
+
+export const Centralizer = styled.div`
+  width: 650px;
 `

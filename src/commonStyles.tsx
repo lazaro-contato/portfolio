@@ -1,15 +1,26 @@
 import styled from 'styled-components'
 import {Colors} from './assets/colors'
+import {Constants} from './assets/constants'
+import {FontWeightProps} from './types'
 
 const DEFAULT_TITLE_LABEL_SIZE = 18
 
 interface LabelProps {
   fontSize?: number
+  color?: string
+}
+
+const returnFontWeight = (type: FontWeightProps) => {
+  if (type === 'BOLD') return Constants.BOLD
+  if (type === 'REGULAR') return Constants.REGULAR
+  if (type === 'SEMIBOLD') return Constants.SEMIBOLD
+  if (type === 'LIGHT') return Constants.LIGHT
+  if (type === 'MEDIUM') return Constants.MEDIUM
 }
 
 export const TitleLabel = styled.span<LabelProps>`
   font-size: ${({fontSize}) => fontSize || DEFAULT_TITLE_LABEL_SIZE}px;
-  color: ${Colors.purple};
+  color: ${({color}) => color || Colors.black};
 `
 
 //--------- DIVS --------- //

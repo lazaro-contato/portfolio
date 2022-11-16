@@ -1,11 +1,13 @@
 import React from 'react'
-import {About} from '../components/About'
-import {HomeLayout} from './styles'
+import {Centralizer, HomeLayout} from './styles'
+import {MainContent} from '../components/MainContent'
 
 export const Home = () => {
   return (
     <HomeLayout>
-      <About />
+      <Centralizer>
+        <MainContent />
+      </Centralizer>
     </HomeLayout>
   )
 }

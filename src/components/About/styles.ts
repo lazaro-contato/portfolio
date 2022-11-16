@@ -18,7 +18,7 @@ export const Title = styled(TitleLabel)`
   font-weight: ${Constants.SEMIBOLD};
 
   &&:hover {
-    color: ${Colors.black};
+    color: ${Colors.blue};
   }
 `
 
