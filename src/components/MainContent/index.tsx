@@ -1,23 +1,26 @@
 import React from 'react'
-import {GapColumnDiv, GapRowDiv} from '../../commonStyles'
-import {Description, Detail, Image, NameLabel, SmallLink, Title} from './styles'
-import {Images} from '../../assets/images'
+import {
+  CenteredGapColumnDiv,
+  GapColumnDiv,
+  ResponsiveCenteredDiv,
+} from '../../commonStyles'
+import {Description, Detail, NameLabel, SmallLink, Title} from './styles'
+import CommonDivider from '../CommonDivider'
 
 const renderPersonalData = () => {
   return (
-    <GapRowDiv gap={18}>
-      <Image src={Images.personalImage} />
-      <GapColumnDiv gap={8}>
-        <GapColumnDiv gap={0}>
-          <NameLabel>LÁZARO OLIVEIRA</NameLabel>
-          <Detail>Software Engineer</Detail>
-        </GapColumnDiv>
-        <Description>
-          Hi there! I’m José Lázaro, a Software Engineer based in Brazil.
-          Currently I work with Typescript, ReactJS and React Native.
-        </Description>
-      </GapColumnDiv>
-    </GapRowDiv>
+    <CenteredGapColumnDiv gap={20}>
+      <CenteredGapColumnDiv gap={0}>
+        <NameLabel>LÁZARO OLIVEIRA</NameLabel>
+        <Detail>Software Engineer</Detail>
+        <CommonDivider />
+      </CenteredGapColumnDiv>
+      <Description>
+        Hi there! I’m José Lázaro, a Software Engineer based in Brazil.
+        Currently I work with <span>Typescript, ReactJS and React Native.</span>
+      </Description>
+      <SmallLink>see more about me</SmallLink>
+    </CenteredGapColumnDiv>
   )
 }
 
@@ -40,10 +43,5 @@ const renderPostsList = () => {
 }
 
 export const MainContent = () => {
-  return (
-    <GapColumnDiv gap={40}>
-      {renderPersonalData()}
-      {renderPostsList()}
-    </GapColumnDiv>
-  )
+  return <ResponsiveCenteredDiv>{renderPersonalData()}</ResponsiveCenteredDiv>
 }

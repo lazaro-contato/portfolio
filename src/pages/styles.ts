@@ -6,12 +6,10 @@ export const HomeLayout = styled.div`
   bottom: 0;
   right: 0;
   height: 100vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
-  padding: 0 20px;
 `
 
 export const Centralizer = styled.div`
-  width: 650px;
+  width: 680px;
 `
