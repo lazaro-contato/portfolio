@@ -7,6 +7,14 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    colors: {
+      brightRed: '#D74141',
+      grayLight: '#6C6C6C',
+    },
+    fontFamily: {
+      'nunito': ['nunito', 'sans-serif'],
+      'lato' : ['lato, sans-serif'],
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
