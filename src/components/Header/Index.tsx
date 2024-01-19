@@ -3,7 +3,7 @@ import React from "react";
 const Header = (): JSX.Element => {
     return (
         <header>
-            <ul className={'flex justify-around max-w-2xl'}>
+            <ul className={'flex justify-around max-w-2xl py-2'}>
                 <li>
                     <a>Home</a>
                 </li>
