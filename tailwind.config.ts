@@ -10,6 +10,7 @@ const config: Config = {
     colors: {
       brightRed: '#D74141',
       grayLight: '#6C6C6C',
+      transparentGray: '#D7D7D7'
     },
     fontFamily: {
       'nunito': ['nunito', 'sans-serif'],
