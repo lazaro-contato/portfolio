@@ -5,7 +5,7 @@ import PostItem from "@/components/PostItem/Index";
 export default function Home() {
 
   return (
-      <main className={'flex flex-col gap-8'}>
+      <main className={'flex flex-col gap-8 px-5 pt-3'}>
           <div className={'flex flex-col gap-5'}>
               <div className={'flex flex-col gap-2'}>
                   <div className={'font-lato flex flex-col text-6xl font-extrabold'}>
