@@ -17,9 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" >
-      <body className={`${inter.className} font-nunito flex flex-col justify-center max-w-2xl w-full`}>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+            <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&family=Permanent+Marker&display=swap" rel="stylesheet" />
+      <body className={`${inter.className} font-lato flex flex-col justify-center max-w-2xl w-full`}>
       {<Header/>}
-      {children}
+        {children}
       </body>
     </html>
   )

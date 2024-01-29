@@ -2,8 +2,8 @@ import React from "react";
 const About = () => {
 
     return (
-        <main className={'flex flex-col gap-8 px-5 pt-3'}>
-            <span className={'font-lato flex flex-col text-6xl font-extrabold text-center'}>ME</span>
+        <main className={'flex flex-col gap-8 px-5 pt-14'}>
+            <span className={'font-granesta flex flex-col text-6xl text-brightOrange'}>ME</span>
             <span>
                 Hi, my name is Lázaro Oliveira, and I am a
                 frontend developer. Currently I work with

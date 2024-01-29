@@ -4,8 +4,8 @@ import PostItem from "@/components/PostItem";
 const Blog = () => {
 
     return (
-        <main className={'flex flex-col gap-8 px-5 pt-3'}>
-           <span className={'font-lato flex flex-col text-6xl font-extrabold text-center'}>BLOG</span>
+        <main className={'flex flex-col gap-8 px-5 pt-14'}>
+           <span className={'font-granesta flex flex-col text-6xl text-brightOrange'}>THE BLOG</span>
             <span>
                 This section is not related just about code.
                 I like learning about many things, from bees to electricity. I decided to create a personal
