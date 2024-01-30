@@ -27,12 +27,18 @@ const config: Config = {
       },
 
       animation: {
-        float: 'float 3s infinite'
+        float: 'float 3s infinite',
+        shake: 'shake 0.1s infinite',
       },
       keyframes: {
         float: {
           '0%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-5%)' }
+        },
+        shake: {
+          '0%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(1%)' },
+          '100%': { transform: 'translateX(-1%)' },
         }
       }
     },

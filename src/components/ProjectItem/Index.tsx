@@ -3,9 +3,10 @@ import Image from "next/image";
 
 const ProjectItem = (): JSX.Element => {
     return (
-        <div className={'flex flex-col gap-1 justify-center'}>
-            <Image alt='name' className={'h-52 w-80'} src={''}/>
+        <div className={'w-full h-auto'}>
+            <Image alt='name' className={'h-full w-full bg-brightOrange'} src={'/image2.png'} width={160} height={203}/>
         </div>
+
     )
 }
 
