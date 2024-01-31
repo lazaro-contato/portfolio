@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from "@/components/Header/Index";
+import Paint from "@/components/Paint/Index";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,9 +21,10 @@ export default function RootLayout({
     <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
             <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&family=Permanent+Marker&display=swap" rel="stylesheet" />
-      <body className={`${inter.className} font-lato flex flex-col justify-center max-w-2xl w-full`}>
+      <body className={`${inter.className} font-lato flex flex-col justify-center max-w-2xl w-full relative`}>
       {<Header/>}
         {children}
+      <Paint/>
       </body>
     </html>
   )

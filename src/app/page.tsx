@@ -24,15 +24,17 @@ export default function Home() {
                   <span className={'text-xl text-brightRed font-bold'}>WORK</span>
 
               </div>
-              <div className={'grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-2'}>
-                  <ProjectItem />
-                  <ProjectItem />
-                  <ProjectItem />
-                  <ProjectItem />
-                  <ProjectItem />
-                  <ProjectItem />
-                  <ProjectItem />
-                  <ProjectItem />
+              <div className={'grid grid-cols-1 sm:grid-cols-2 justify-items-center'}>
+                  <div className={'grid grid-cols-1 gap-3 justify-center'}>
+                      <ProjectItem />
+                      <ProjectItem />
+                      <ProjectItem />
+                  </div>
+                  <div className={'grid grid-cols-1 gap-3'}>
+                      <ProjectItem />
+                      <ProjectItem />
+                      <ProjectItem />
+                  </div>
               </div>
           </section>
 
