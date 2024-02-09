@@ -5,7 +5,7 @@ const Blog = () => {
 
     return (
         <main className={'flex flex-col gap-8 px-5 pt-14'}>
-           <span className={'font-granesta flex flex-col text-6xl text-brightOrange'}>-&gt; BLOG</span>
+           <h1 className={'font-granesta flex flex-col text-6xl text-brightOrange'}>-&gt; BLOG</h1>
             <section className={'flex flex-col gap-4'}>
                 <span className={'font-bold text-lg'}>
                    some of my posts
@@ -19,7 +19,7 @@ const Blog = () => {
                 </ul>
             </section>
             <section className={'flex flex-col gap-6'}>
-                <span className={'font-granesta flex flex-col text-4xl text-brightOrange'}>{`// BARSA`}</span>
+                <h2 className={'font-granesta flex flex-col text-4xl text-brightOrange'}>{`// BARSA`}</h2>
 
 
                 <span>
@@ -41,7 +41,7 @@ const Blog = () => {
                 </div>
 
                 <div className={'flex flex-col gap-2.5'}>
-                    <span className={'text-xl font-bold'}>my personal barsa</span>
+                    <h3 className={'text-xl font-bold'}>my personal barsa</h3>
                     <ul className={'flex flex-col gap-2'}>
                         <PostItem />
                         <PostItem />

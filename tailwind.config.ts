@@ -10,9 +10,11 @@ const config: Config = {
     colors: {
       brightRed: '#D74141',
       grayLight: '#6C6C6C',
+      graySoft: '#AFAFAF',
       transparentGray: '#D7D7D7',
       brightBlue: '#4147D7',
       brightOrange: '#FF583B',
+      softBlue: '#27C8EC',
     },
     fontFamily: {
       'nunito': ['nunito', 'sans-serif'],
@@ -29,6 +31,7 @@ const config: Config = {
       animation: {
         float: 'float 3s infinite',
         shake: 'shake 0.1s infinite',
+        rotate: 'rotateItself 0.3s ease-out'
       },
       keyframes: {
         float: {
@@ -39,6 +42,10 @@ const config: Config = {
           '0%': { transform: 'translateX(0)' },
           '50%': { transform: 'translateX(1%)' },
           '100%': { transform: 'translateX(-1%)' },
+        },
+        rotateItself: {
+          'from': { transform: 'rotateY(0deg)' },
+          'to': { transform: 'rotateY(360deg)' },
         }
       }
     },

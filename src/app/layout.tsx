@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Header from "@/components/Header/Index";
-import Paint from "@/components/Paint/Index";
+import Header from '@/components/Header/Index'
+import Paint from '@/components/Paint/Index'
+import Footer from '@/components/Footer/Index'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,14 +18,20 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" >
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-            <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&family=Permanent+Marker&display=swap" rel="stylesheet" />
-      <body className={`${inter.className} font-lato flex flex-col justify-center max-w-2xl w-full relative`}>
-      {<Header/>}
+    <html lang="en">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&family=Permanent+Marker&display=swap"
+        rel="stylesheet"
+      />
+      <body
+        className={`${inter.className} font-lato flex flex-col justify-center max-w-2xl w-full relative pb-8 gap-8`}
+      >
+        {<Header />}
         {children}
-      <Paint/>
+        <Paint />
+        <Footer />
       </body>
     </html>
   )
