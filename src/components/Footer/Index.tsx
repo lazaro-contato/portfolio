@@ -7,7 +7,9 @@ const Footer = () => {
           {' '}
           Copyright © 2019-2024 José Lázaro · All Rights Reserved.
         </span>
-        <div className={'flex  flex-row gap-2 text-grayLight text-sm'}>
+        <address
+          className={'flex  flex-row gap-2 text-grayLight text-sm not-italic'}
+        >
           <a
             className={'cursor-pointer hover:underline'}
             href={'https://dev.to/lazarocontato'}
@@ -36,7 +38,7 @@ const Footer = () => {
           </a>
           <span>•</span>
           <a className={'cursor-pointer hover:underline'}>my personal barsa</a>
-        </div>
+        </address>
       </div>
     </footer>
   )

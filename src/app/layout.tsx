@@ -26,10 +26,11 @@ export default function RootLayout({
         rel="stylesheet"
       />
       <body
-        className={`${inter.className} font-lato flex flex-col justify-center max-w-2xl w-full relative pb-8 gap-8`}
+        className={`${inter.className} font-lato flex flex-col max-w-2xl w-full relative pb-5 gap-8 min-h-screen`}
       >
-        {<Header />}
-        {children}
+        <Header />
+        <div className={'pt-5'}>{children}</div>
+
         <Paint />
         <Footer />
       </body>

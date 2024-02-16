@@ -4,7 +4,7 @@ import { FaDev, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { BsArrowUpRight } from 'react-icons/bs'
 const About = () => {
   return (
-    <main className={'flex flex-col gap-8 px-5 pt-14'}>
+    <main className={'flex flex-col gap-8 px-5 pt-5 h-full'}>
       <div className={'grid grid-cols-1 gap-6 md:grid-cols-2'}>
         <div className={'relative flex items-center justify-center'}>
           <div>
@@ -96,14 +96,14 @@ const About = () => {
           </div>
         </p>
       </div>
-      <div className={'flex flex-col gap-2.5'}>
-        <span className={'text-xl text-brightRed'}>What I&apos;m learning</span>
-        <div className={'flex flex-col gap-2'}>
-          <span>Creating a farm with arduino</span>
-          <span>My work desk created via AutoCAD</span>
-          <span>How to draw?</span>
-        </div>
-      </div>
+      {/* <div className={'flex flex-col gap-2.5'}> */}
+      {/*  <span className={'text-xl text-brightRed'}>What I&apos;m learning</span> */}
+      {/*  <div className={'flex flex-col gap-2'}> */}
+      {/*    <span>Creating a farm with arduino</span> */}
+      {/*    <span>My work desk created via AutoCAD</span> */}
+      {/*    <span>How to draw?</span> */}
+      {/*  </div> */}
+      {/* </div> */}
     </main>
   )
 }
