@@ -14,15 +14,23 @@ const Header = (): JSX.Element => {
         >
           <li
             className={
-              'hover:bg-brightOrange/10 hover:scale-105 transition duration-300 ease-in-out'
+              'hover:text-brightOrange hover:scale-105 transition duration-100 ease-in-out'
             }
           >
             <Link href={'/'}>Home</Link>
           </li>
-          <li>
+          <li
+            className={
+              'hover:text-brightOrange hover:scale-105 transition duration-100 ease-in-out'
+            }
+          >
             <Link href={'/blog'}>Blog</Link>
           </li>
-          <li>
+          <li
+            className={
+              'hover:text-brightOrange hover:scale-105 transition duration-100 ease-in-out'
+            }
+          >
             <Link href={'/about'}>About</Link>
           </li>
         </ul>
