@@ -13,18 +13,18 @@ export default function Home() {
           <span className={'text-6xl'}>A FRONTEND ENGINEER</span>
         </div>
         <a className={'text-brightOrange text-lg'} href={'#common'}>
-          check my content
+          check my work
         </a>
       </div>
 
       <span>
         I like design and building things, programming and drawing. Sometimes I
-        like to write about my interests and everything I'm learning. Take a
-        look at my personal barsa.
+        like to write about my interests and everything I&apos;m learning. Take
+        a look at my personal barsa.
       </span>
       <section className={'flex flex-col gap-2.5'} id="common">
         <div className={'flex flex-col'}>
-          <span className={'text-xl text-brightRed font-bold'}>WORK</span>
+          <h1 className={'text-xl text-brightRed font-bold'}>WORK</h1>
         </div>
         <div className={'grid grid-cols-1 sm:grid-cols-2 justify-items-center'}>
           <div className={'grid grid-cols-1 gap-3 justify-center'}>

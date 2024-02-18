@@ -5,7 +5,7 @@ const Blog = () => {
   return (
     <main className={'flex flex-col gap-8 px-5'}>
       <h1 className={'font-granesta flex flex-col text-6xl text-brightOrange'}>
-        -&gt; BLOG
+        -&gt; BLOGG
       </h1>
       <section className={'flex flex-col gap-4'}>
         <span className={'font-bold text-lg'}>some of my posts</span>
@@ -46,7 +46,7 @@ const Blog = () => {
         </div>
 
         <div className={'flex flex-col gap-2.5'}>
-          <h3 className={'text-xl font-bold'}>my personal barsa</h3>
+          <h3 className={'text-xl font-bold'}>mind chapters</h3>
           <ul className={'flex flex-col gap-2'}>
             <PostItem />
             <PostItem />
