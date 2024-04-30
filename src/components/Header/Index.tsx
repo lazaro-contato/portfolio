@@ -1,7 +1,8 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
+import Paint from '@/components/Paint/Index'
 
 const Header = (): JSX.Element => {
   return (
@@ -33,6 +34,7 @@ const Header = (): JSX.Element => {
           >
             <Link href={'/about'}>About</Link>
           </li>
+          <Paint />
         </ul>
       </nav>
     </header>

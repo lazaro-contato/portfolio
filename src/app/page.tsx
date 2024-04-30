@@ -1,9 +1,10 @@
 import ProjectItem from '@/components/ProjectItem/Index'
 import HomeImage from '@/components/HomeImage/Index'
+import React from 'react'
 
 export default function Home() {
   return (
-    <main className={'flex flex-col gap-8 px-5'}>
+    <main className={'flex flex-col gap-8 px-5 relative'}>
       <div
         className={'flex flex-col gap-4 h-screen items-center justify-center'}
       >
@@ -20,7 +21,10 @@ export default function Home() {
       <span>
         I like design and building things, programming and drawing. Sometimes I
         like to write about my interests and everything I&apos;m learning. Take
-        a look at my personal barsa.
+        a look at{' '}
+        <a className={'text-brightRed underline italic cursor-pointer'}>
+          my personal barsa.
+        </a>
       </span>
       <section className={'flex flex-col gap-2.5'} id="common">
         <div className={'flex flex-col'}>

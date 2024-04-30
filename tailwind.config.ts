@@ -17,9 +17,9 @@ const config: Config = {
       softBlue: '#27C8EC',
     },
     fontFamily: {
-      'nunito': ['nunito', 'sans-serif'],
-      'lato' : ['lato, sans-serif'],
-      'granesta': ['Granesta', 'sans-serif'],
+      nunito: ['nunito', 'sans-serif'],
+      lato: ['lato, sans-serif'],
+      granesta: ['Granesta', 'sans-serif'],
     },
     extend: {
       backgroundImage: {
@@ -31,12 +31,12 @@ const config: Config = {
       animation: {
         float: 'float 3s infinite',
         shake: 'shake 0.1s infinite',
-        rotate: 'rotateItself 0.3s ease-out'
+        rotate: 'rotateItself 0.3s ease-out',
       },
       keyframes: {
         float: {
           '0%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-5%)' }
+          '50%': { transform: 'translateY(-5%)' },
         },
         shake: {
           '0%': { transform: 'translateX(0)' },
@@ -44,14 +44,14 @@ const config: Config = {
           '100%': { transform: 'translateX(-1%)' },
         },
         rotateItself: {
-          'from': { transform: 'rotateY(0deg)' },
-          'to': { transform: 'rotateY(360deg)' },
-        }
-      }
+          from: { transform: 'rotateY(0deg)' },
+          to: { transform: 'rotateY(360deg)' },
+        },
+      },
     },
     variants: {
       extend: {
-        animation: ['hover', 'focus']
+        animation: ['hover', 'focus'],
       },
     },
   },

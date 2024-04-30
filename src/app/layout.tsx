@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/components/Header/Index'
 import Paint from '@/components/Paint/Index'
 import Footer from '@/components/Footer/Index'
+import React from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,19 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&family=Permanent+Marker&display=swap"
-        rel="stylesheet"
-      />
       <body
         className={`${inter.className} font-lato flex flex-col max-w-2xl w-full relative pb-5 gap-8 min-h-screen`}
       >
         <Header />
-        <div className={'pt-5'}>{children}</div>
-
-        <Paint />
+        <div className={'pt-5 relative'}>{children}</div>
         <Footer />
       </body>
     </html>

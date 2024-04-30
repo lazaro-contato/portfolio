@@ -24,7 +24,7 @@ const About = () => {
             />
           </div>
         </div>
-        <div className={'flex flex-col gap-4 md:justify-end'}>
+        <div className={'flex flex-col gap-4 md:justify-start md:mt-6'}>
           <p>
             Hi, my name is Lázaro Oliveira, and I am a frontend developer based
             in <span className={'underline cursor-pointer'}>Brazil</span>. I
@@ -36,8 +36,8 @@ const About = () => {
             <span className={'underline'}>
               Typescript, ReactJS, React Native and NextJS.
             </span>{' '}
-            Also I’m creating a loading library to ReactJS projects. Check{' '}
-            <a className={'underline text-brightOrange'}>here</a>.
+            {/* Also I’m creating a loading library to ReactJS projects. Check{' '} */}
+            {/* <a className={'underline text-brightOrange'}>here</a>. */}
           </p>
           <p>
             When I am not working or writing something I’m probably spending
