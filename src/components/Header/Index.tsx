@@ -2,41 +2,44 @@
 
 import React from 'react'
 import Link from 'next/link'
-import Paint from '@/components/Paint/Index'
 
 const Header = (): JSX.Element => {
   return (
-    <header>
-      <nav>
-        <ul
-          className={
-            'flex justify-around max-w-2xl py-2 fixed z-20 w-full backdrop-blur-sm font-bold'
-          }
-        >
-          <li
-            className={
-              'hover:text-brightOrange hover:scale-105 transition duration-100 ease-in-out'
-            }
-          >
-            <Link href={'/'}>Home</Link>
+    <header className={'py-6'}>
+      <div className={'flex justify-end'}>
+        <ul className={'flex flex-row text-center font-semibold'}>
+          <li>
+            <Link
+              href={'/'}
+              className={
+                'inline-block w-24 hover:text-softBlue transition duration-200 ease-in-out'
+              }
+            >
+              Home
+            </Link>
           </li>
-          <li
-            className={
-              'hover:text-brightOrange hover:scale-105 transition duration-100 ease-in-out'
-            }
-          >
-            <Link href={'/blog'}>Blog</Link>
+          <li className={'h-6'}>
+            <Link
+              href={'/blog'}
+              className={
+                'inline-block w-24 hover:text-softBlue transition duration-200 ease-in-out'
+              }
+            >
+              Blog
+            </Link>
           </li>
-          <li
-            className={
-              'hover:text-brightOrange hover:scale-105 transition duration-100 ease-in-out'
-            }
-          >
-            <Link href={'/about'}>About</Link>
+          <li className={'h-6'}>
+            <Link
+              href={'/about'}
+              className={
+                'inline-block w-24 hover:text-softBlue transition duration-200 ease-in-out'
+              }
+            >
+              About
+            </Link>
           </li>
-          <Paint />
         </ul>
-      </nav>
+      </div>
     </header>
   )
 }

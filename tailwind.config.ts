@@ -14,12 +14,13 @@ const config: Config = {
       transparentGray: '#D7D7D7',
       brightBlue: '#4147D7',
       brightOrange: '#FF583B',
-      softBlue: '#27C8EC',
+      softBlue: '#1073EB',
     },
     fontFamily: {
       nunito: ['nunito', 'sans-serif'],
       lato: ['lato, sans-serif'],
       granesta: ['Granesta', 'sans-serif'],
+      figtree: ['Figtree', 'sans-serif'],
     },
     extend: {
       backgroundImage: {

@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Figtree } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header/Index'
-import Paint from '@/components/Paint/Index'
 import Footer from '@/components/Footer/Index'
 import React from 'react'
 
-const inter = Inter({ subsets: ['latin'] })
+const figtree = Figtree({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Lázaro Oliveira',
@@ -21,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} font-lato flex flex-col max-w-2xl w-full relative pb-5 gap-8 min-h-screen`}
+        className={`${figtree.className} flex flex-col max-w-[1200px] w-full gap-8`}
       >
         <Header />
-        <div className={'pt-5 relative'}>{children}</div>
+        <div>{children}</div>
         <Footer />
       </body>
     </html>
