@@ -1,17 +1,22 @@
 import React from 'react'
-import Image from 'next/image'
 
 const ProjectItem = (): JSX.Element => {
   return (
-    <div className={'w-72 h-96'}>
-      <Image
-        alt="name"
-        className={'h-full w-full bg-brightOrange'}
-        src={'/image2.png'}
-        width={160}
-        height={203}
-      />
-    </div>
+    <a className={'cursor-pointer'}>
+      <div className={'flex flex-col gap-2'}>
+        <img
+          alt="name"
+          className={
+            'bg-brightOrange rounded-2xl transition-transform duration-500 transform hover:translate-y-[-8px]'
+          }
+          src={'/image2.png'}
+        />
+        <div className={'flex flex-col'}>
+          <span className={'text-2xl font-semibold'}>New Content</span>
+          <span>Product (UI/UX) Design | Mobile App & Landing page</span>
+        </div>
+      </div>
+    </a>
   )
 }
 

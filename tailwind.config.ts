@@ -25,19 +25,19 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-
       animation: {
-        float: 'float 3s infinite',
+        float: 'float 1s ease-in-out',
         shake: 'shake 0.1s infinite',
         rotate: 'rotateItself 0.3s ease-out',
       },
       keyframes: {
         float: {
           '0%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-5%)' },
+          '100%': { transform: 'translateY(-6px)' },
         },
         shake: {
           '0%': { transform: 'translateX(0)' },
