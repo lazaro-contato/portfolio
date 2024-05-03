@@ -6,7 +6,7 @@ import Link from 'next/link'
 const Header = (): JSX.Element => {
   return (
     <header className={'py-6'}>
-      <div className={'flex justify-end'}>
+      <div className={'flex items-center justify-center'}>
         <ul className={'flex flex-row text-center font-semibold'}>
           <li>
             <Link

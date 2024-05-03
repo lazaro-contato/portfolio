@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className={'flex flex-col gap-2 px-5 justify-end'}>
+    <footer className={'flex flex-col gap-2 px-5 justify-end mb-6'}>
       <div className={'w-full h-[1px] bg-graySoft'} />
       <div className={'flex flex-col gap-2'}>
         <span className={'text-sm'}>

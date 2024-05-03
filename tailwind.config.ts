@@ -7,15 +7,6 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    colors: {
-      brightRed: '#D74141',
-      grayLight: '#6C6C6C',
-      graySoft: '#AFAFAF',
-      transparentGray: '#D7D7D7',
-      brightBlue: '#4147D7',
-      brightOrange: '#FF583B',
-      softBlue: '#1073EB',
-    },
     fontFamily: {
       nunito: ['nunito', 'sans-serif'],
       lato: ['lato, sans-serif'],
@@ -23,6 +14,15 @@ const config: Config = {
       figtree: ['Figtree', 'sans-serif'],
     },
     extend: {
+      colors: {
+        brightRed: '#D74141',
+        grayLight: '#6C6C6C',
+        graySoft: '#AFAFAF',
+        transparentGray: '#D7D7D7',
+        brightBlue: '#4147D7',
+        brightOrange: '#FF583B',
+        softBlue: '#1073EB',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 
