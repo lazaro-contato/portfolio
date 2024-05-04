@@ -5,6 +5,7 @@ import { FaCircleUser } from 'react-icons/fa6'
 import PersonalImage from '@/components/PersonalImage'
 import { FaLongArrowAltRight } from 'react-icons/fa'
 import SocialButtons from '@/components/SocialButtons'
+import AboutSlider from '@/components/AboutSlider'
 
 const Home = () => {
   return (
@@ -20,10 +21,9 @@ const Home = () => {
           Design Solution
         </h1>
         <span className={'text-grayLight'}>
-          I’m a frontend developer dedicated to refining and reshaping tech
-          startups through intuitive and strategic design. With over 5 years in
-          the field, I transform brand and user experiences across web and
-          mobile platforms.
+          I’m José Lázaro a brazilian frontend developer with over 3 years of
+          experience with Typescript, React and React Native, I love creating
+          incredible digital experiences that captivate and engage users.
         </span>
         <SocialButtons />
       </section>
@@ -116,13 +116,7 @@ const Home = () => {
           </button>
         </div>
         <div>
-          <img
-            alt="name"
-            className={
-              'bg-brightOrange rounded-2xl transition-transform duration-500 transform hover:translate-y-[-8px]'
-            }
-            src={'/image2.png'}
-          />
+          <AboutSlider />
         </div>
       </section>
     </main>
