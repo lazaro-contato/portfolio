@@ -1,9 +1,8 @@
 import React from 'react'
 import { BsArrowUpRight } from 'react-icons/bs'
 import SocialButtons from '@/components/SocialButtons'
-import { SiTypescript } from 'react-icons/si'
-import { IoLogoReact } from 'react-icons/io5'
-import { RiNextjsFill } from 'react-icons/ri'
+import AboutSlider from '@/components/AboutSlider'
+import BrazilIcon from '@/components/BrazilIcon'
 const About = () => {
   return (
     <main className={'flex flex-col gap-8 px-5 pt-5 h-full'}>
@@ -12,10 +11,10 @@ const About = () => {
           <h2 className={'font-semibold text-5xl'}>About</h2>
           <div>
             <p>
-              Hey, I’m José Lázaro a brazilian frontend developer with over 3
-              years of experience with Typescript, React and React Native, I
-              love creating incredible digital experiences that captivate and
-              engage users.
+              Hey, I’m José Lázaro a {<BrazilIcon label={'brazilian'} />}{' '}
+              frontend developer with over 3 years of experience with
+              Typescript, React and React Native, I love creating digital
+              experiences that captivate and engage users.
             </p>
             <br />
             <p>
@@ -48,19 +47,15 @@ const About = () => {
             <span className={'text-xl font-bold'}>Experience</span>
             <ul className={'text-softBlue'}>
               <li className={'flex flex-row items-center gap-2'}>
-                <SiTypescript />
                 Typescript +3 Years
               </li>
               <li className={'flex flex-row items-center gap-2'}>
-                <IoLogoReact />
                 React Native +3 Years
               </li>
               <li className={'flex flex-row items-center gap-2'}>
-                <IoLogoReact />
                 React JS +3 Years
               </li>
               <li className={'flex flex-row items-center gap-2'}>
-                <RiNextjsFill />
                 NextJS +1 Year
               </li>
             </ul>
@@ -78,30 +73,29 @@ const About = () => {
           <br />
 
           <div className={'flex flex-col gap-2.5'}>
-            <span className={'text-xl font-bold'}>Get in touch</span>
+            <span className={'text-xl font-bold'}>
+              Are you interested in my work? Get in touch
+            </span>
             <p className={'flex flex-wrap gap-2'}>
               Email me at
               <a
                 className={
-                  'cursor-pointer flex flex-row items-center gap-2 hover:text-brightRed underline'
+                  'cursor-pointer flex flex-row items-center gap-2 hover:text-softBlue transition duration-200 underline'
                 }
                 href={'mailto:contato.jlazaro@gmail.com'}
               >
                 contato.jlazaro@gmail.com <BsArrowUpRight />
               </a>
               <span>or follow me via my social links.</span>
+              <SocialButtons />
             </p>
           </div>
         </div>
-        <div>
-          <img
-            alt="name"
-            className={
-              'bg-brightOrange rounded-2xl transition-transform duration-500 transform hover:translate-y-[-8px]'
-            }
-            src={'/image2.png'}
-          />
-          <SocialButtons />
+        <div className={'flex flex-col gap-6'}>
+          <AboutSlider />
+          <div>
+            <SocialButtons />
+          </div>
         </div>
       </section>
     </main>

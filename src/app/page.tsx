@@ -10,15 +10,15 @@ import AboutSlider from '@/components/AboutSlider'
 const Home = () => {
   return (
     <main className={'flex flex-col gap-20 px-5 relative mb-24'}>
-      <section className={'flex flex-col max-w-[700px] gap-4 mt-40'}>
+      <section className={'flex flex-col max-w-[700px] gap-4 mt-32'}>
         <PersonalImage />
         <div className={'flex flex-row gap-2 items-center text-softBlue'}>
           <FaCircleUser />
           <span>José Lázaro | Frontend Enginner</span>
         </div>
         <h1 className={'font-semibold text-4xl'}>
-          Versatile Product Designer. Elevating Tech Startups with Intuitive
-          Design Solution
+          Creating digital experiences and improving creative expression. Coding
+          is Art too.
         </h1>
         <span className={'text-grayLight'}>
           I’m José Lázaro a brazilian frontend developer with over 3 years of
@@ -51,13 +51,7 @@ const Home = () => {
       </section>
       <section className={'flex flex-col gap-6'}>
         <div className={'flex flex-row justify-between'}>
-          <div className={'flex flex-col'}>
-            <h2 className={'font-semibold text-4xl'}>Articles</h2>{' '}
-            <span>
-              Over the years, I’ve had the pleasure of working on 30+ projects,
-              end to end, and here are a few selected ones.
-            </span>
-          </div>
+          <h2 className={'font-semibold text-4xl'}>Articles</h2>{' '}
           <a
             className={
               'flex flex-row items-center justify-center gap-3 hover:translate-x-[4px] duration-300 transform cursor-pointer text-softBlue font-bold'
@@ -86,8 +80,7 @@ const Home = () => {
             <p>
               Hey, I’m José Lázaro a brazilian frontend developer with over 3
               years of experience with Typescript, React and React Native, I
-              love headfirst into creating incredible digital experiences that
-              captivate and engage users.
+              love creating digital experiences that captivate and engage users.
             </p>
             <br />
             <p>
@@ -97,11 +90,13 @@ const Home = () => {
             </p>
             <br />
             <p>
-              As an entrepreneur, I am constantly looking for new ways to
-              combine my passion for technology and artistic expression. I
-              firmly believe in technology's ability to transform lives and
-              communities, and I'm determined to use my skills to make a
-              difference.
+              I really like learning about many things, from bees to
+              electricity. So I decided to create a personal library to put all
+              my projects and work, so if you like a little bit of
+              interdisciplinary feel free to see{' '}
+              <a className={'text-softBlue underline italic cursor-pointer'}>
+                my personal barsa.
+              </a>
             </p>
           </div>
           <button

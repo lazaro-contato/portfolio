@@ -31,7 +31,7 @@ const config: Config = {
       },
       animation: {
         float: 'float 1s ease-in-out',
-        shake: 'shake 0.1s infinite',
+        shake: 'shake 0.8s infinite',
         rotate: 'rotateItself 0.3s ease-out',
       },
       keyframes: {
@@ -40,9 +40,10 @@ const config: Config = {
           '100%': { transform: 'translateY(-6px)' },
         },
         shake: {
-          '0%': { transform: 'translateX(0)' },
-          '50%': { transform: 'translateX(1%)' },
-          '100%': { transform: 'translateX(-1%)' },
+          '0%': { transform: 'rotate(0deg)' },
+          '25%': { transform: 'rotate(5deg)' },
+          '50%': { transform: 'rotate(-5deg)' },
+          '100%': { transform: 'rotate(0deg)' },
         },
         rotateItself: {
           from: { transform: 'rotateY(0deg)' },
