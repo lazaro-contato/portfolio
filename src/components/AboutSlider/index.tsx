@@ -1,6 +1,6 @@
 'use client'
-import { useKeenSlider } from 'keen-slider/react'
 import React from 'react'
+import { useKeenSlider } from 'keen-slider/react'
 const AboutSlider = () => {
   const [sliderRef] = useKeenSlider(
     {

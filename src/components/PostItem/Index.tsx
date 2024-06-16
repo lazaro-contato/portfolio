@@ -1,6 +1,12 @@
 import React from 'react'
+import { Article } from '@/services/http/repositories/articles/models'
+import { formatDate } from '@/utils/string'
 
-const PostItem = (): JSX.Element => {
+interface PostItemProps {
+  article?: Article
+}
+
+const PostItem = ({ article }: PostItemProps): JSX.Element => {
   return (
     <li
       className={
@@ -10,15 +16,15 @@ const PostItem = (): JSX.Element => {
       <a className={'cursor-pointer'}>
         <div className={'h-16 flex flex-row justify-between items-center'}>
           <div className={'flex flex-col gap-2 text-sm md:text-base'}>
-            <span>Creating Farm with arduino</span>
+            <span>{article?.title}</span>
             <span className={'text-[12px] md:text-sm text-grayLight'}>
-              14/04/2022
+              {article?.published_at && formatDate(article.published_at)}
             </span>
           </div>
 
           <div>
             <span className={'text-sm md:text-base text-grayLight'}>
-              1,4215 views
+              {article?.page_views_count} views
             </span>
           </div>
         </div>
