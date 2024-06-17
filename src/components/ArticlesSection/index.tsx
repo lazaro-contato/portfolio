@@ -21,7 +21,6 @@ const getArticles = async (): Promise<Article[]> => {
 
 const ArticlesSection = async () => {
   const articles = await getArticles()
-  console.log(articles[0])
   return (
     <section className={'flex flex-col gap-6'}>
       <div className={'flex flex-row justify-between'}>
@@ -39,7 +38,7 @@ const ArticlesSection = async () => {
       </div>
 
       <ul className={'flex flex-col'}>
-        {articles.map((article, index) => {
+        {articles?.map((article, index) => {
           return <PostItem key={index} article={article} />
         })}
       </ul>
