@@ -8,7 +8,7 @@ const About = () => {
     <main className={'flex flex-col gap-8 px-5 pt-5 h-full'}>
       <section className={'grid grid-cols-1 gap-6 md:grid-cols-2'}>
         <div className={'flex flex-col gap-4'}>
-          <h2 className={'font-semibold text-5xl'}>About</h2>
+          <h1 className={'font-semibold text-5xl'}>About</h1>
           <div>
             <p>
               Hey, I’m José Lázaro a {<BrazilIcon label={'brazilian'} />}{' '}

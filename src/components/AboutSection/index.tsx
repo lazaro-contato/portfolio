@@ -1,6 +1,7 @@
 import { FaLongArrowAltRight } from 'react-icons/fa'
 import AboutSlider from '@/components/AboutSlider'
 import React from 'react'
+import Link from 'next/link'
 
 const AboutSection = () => {
   return (
@@ -30,16 +31,18 @@ const AboutSection = () => {
             </a>
           </p>
         </div>
-        <button
-          className={
-            'bg-softBlue py-2 rounded text-white w-32 flex flex-row items-center justify-center gap-3 hover:translate-x-[4px] duration-300 transform'
-          }
-        >
-          See more
-          <span>
-            <FaLongArrowAltRight />
-          </span>
-        </button>
+        <Link href={'/about'}>
+          <button
+            className={
+              'bg-softBlue py-2 rounded text-white w-32 flex flex-row items-center justify-center gap-3 hover:translate-x-[4px] duration-300 transform'
+            }
+          >
+            See more
+            <span>
+              <FaLongArrowAltRight />
+            </span>
+          </button>
+        </Link>
       </div>
       <div>
         <AboutSlider />
