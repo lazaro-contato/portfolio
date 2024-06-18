@@ -30,6 +30,16 @@ const Header = (): JSX.Element => {
           </li>
           <li className={'h-6'}>
             <Link
+              href={'/work'}
+              className={
+                'inline-block w-24 hover:text-softBlue transition duration-200 ease-in-out'
+              }
+            >
+              Work
+            </Link>
+          </li>
+          <li className={'h-6'}>
+            <Link
               href={'/about'}
               className={
                 'inline-block w-24 hover:text-softBlue transition duration-200 ease-in-out'
