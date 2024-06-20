@@ -36,8 +36,8 @@ const Footer = () => {
           >
             Linkedin
           </a>
-          <span>•</span>
-          <a className={'cursor-pointer hover:underline'}>my personal barsa</a>
+          {/* <span>•</span> */}
+          {/* <a className={'cursor-pointer hover:underline'}>my personal barsa</a> */}
         </address>
       </div>
     </footer>
