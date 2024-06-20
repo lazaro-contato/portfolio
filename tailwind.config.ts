@@ -30,14 +30,15 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       animation: {
-        float: 'float 1s ease-in-out',
+        float: 'float 3s infinite',
         shake: 'shake 0.8s infinite',
         rotate: 'rotateItself 0.3s ease-out',
       },
       keyframes: {
         float: {
           '0%': { transform: 'translateY(0)' },
-          '100%': { transform: 'translateY(-6px)' },
+          '50%': { transform: 'translateY(-10px)' },
+          '100%': { transform: 'translateY(0px)' },
         },
         shake: {
           '0%': { transform: 'rotate(0deg)' },
