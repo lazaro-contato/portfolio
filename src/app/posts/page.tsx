@@ -1,6 +1,8 @@
 import React from 'react'
 import PostItem from '@/components/PostItem/Index'
 import { Article } from '@/services/http/repositories/articles/models'
+import { FaLongArrowAltRight } from 'react-icons/fa'
+import Link from 'next/link'
 
 const getArticles = async (): Promise<Article[]> => {
   const headers = new Headers()
@@ -25,6 +27,7 @@ const Blog = async () => {
     <main className={'flex flex-col gap-8 px-5'}>
       <section className={'flex flex-col gap-4'}>
         <h1 className={'font-semibold text-5xl'}>Articles</h1>
+        <p>Some of my published articles.</p>
         <ul className={'flex flex-col'}>
           {articles?.map((article, index) => {
             return <PostItem key={index} article={article} />

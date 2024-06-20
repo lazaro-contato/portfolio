@@ -7,6 +7,7 @@ import SocialButtons from '@/components/SocialButtons'
 import AboutSection from '@/components/AboutSection'
 import ArticlesSection from '../components/ArticlesSection'
 import WorkSection from '@/components/WorkSection'
+import BrazilIcon from '@/components/BrazilIcon'
 
 const Home = () => {
   return (
@@ -22,9 +23,10 @@ const Home = () => {
           is Art too.
         </h1>
         <span className={'text-grayLight'}>
-          I’m José Lázaro a brazilian frontend developer with over 3 years of
-          experience with Typescript, React and React Native, I love creating
-          incredible digital experiences that captivate and engage users.
+          I’m José Lázaro a {<BrazilIcon label={'brazilian'} />} frontend
+          developer with over 3 years of experience with Typescript, React and
+          React Native, I love creating incredible digital experiences that
+          captivate and engage users.
         </span>
         <SocialButtons />
       </section>
