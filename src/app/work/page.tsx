@@ -12,7 +12,8 @@ const Work = async () => {
         <div className={'flex flex-col gap-4 items-center mt-16'}>
           <Image
             src={'/homeImage.png'}
-            alt="my gif"
+            alt="art made by me!"
+            title={'art made by me!'}
             height={300}
             width={300}
             className={'animate-float hover:animation-shake cursor-pointer'}
