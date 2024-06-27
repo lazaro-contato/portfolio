@@ -16,19 +16,16 @@ const AboutSection = () => {
           </p>
           <br />
           <p>
-            In addition to coding, I have a passion for creative expression. I
-            discovered that drawing is a powerful way of expressing myself,
-            among my biggest inspirations are Gawx and Kim Jung Gi.
+            I am currently pursuing a graduate specialization in Software
+            Engineering at PUC Minas. My studies focus on advanced software
+            design principles, agile methodologies, and cutting-edge development
+            practices.
           </p>
           <br />
           <p>
-            I really like learning about many things, from bees to electricity.
-            So I decided to create a personal library to put all my projects and
-            work, so if you like a little bit of interdisciplinary feel free to
-            see{' '}
-            <a className={'text-softBlue underline italic cursor-pointer'}>
-              my personal barsa.
-            </a>
+            In addition to coding, I have a passion for creative expression. I
+            discovered that drawing is a powerful way of expressing myself,
+            among my biggest inspirations are Gawx and Kim Jung Gi.
           </p>
         </div>
         <Link href={'/about'}>
