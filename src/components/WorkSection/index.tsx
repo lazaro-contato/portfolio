@@ -21,8 +21,18 @@ const WorkSection = () => {
       </div>
 
       <div className={'grid grid-cols-1 gap-4 w-full md:grid-cols-2'}>
-        <ProjectItem />
-        <ProjectItem />
+        <ProjectItem
+          name={'CSS-100'}
+          description={'100 styles made with pure CSS and JS'}
+          image={'./css-projects.jpg'}
+          url={'https://6683096b7f25b4745e0482ea--css100projects.netlify.app/'}
+        />
+        <ProjectItem
+          name={'CSS-100'}
+          description={'100 CSS projects made with full vanilla css and js'}
+          image={'./css-projects.jpg'}
+          url={'https://6683096b7f25b4745e0482ea--css100projects.netlify.app/'}
+        />
       </div>
     </section>
   )

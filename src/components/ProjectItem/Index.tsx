@@ -1,19 +1,31 @@
 import React from 'react'
 
-const ProjectItem = (): JSX.Element => {
+interface ProjectItemProps {
+  image: string
+  name: string
+  description: string
+  url: string
+}
+
+const ProjectItem = ({
+  description,
+  image,
+  name,
+  url,
+}: ProjectItemProps): JSX.Element => {
   return (
-    <a className={'cursor-pointer'}>
+    <a className={'cursor-pointer'} href={url} target={'_blank'}>
       <div className={'flex flex-col gap-2'}>
         <img
           alt="name"
           className={
             'bg-brightOrange rounded-2xl transition-transform duration-500 transform hover:translate-y-[-8px]'
           }
-          src={'/image2.png'}
+          src={image}
         />
         <div className={'flex flex-col'}>
-          <span className={'text-2xl font-semibold'}>New Content</span>
-          <span>Product (UI/UX) Design | Mobile App & Landing page</span>
+          <span className={'text-2xl font-semibold'}>{name}</span>
+          <span>{description}</span>
         </div>
       </div>
     </a>

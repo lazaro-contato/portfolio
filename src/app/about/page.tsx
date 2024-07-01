@@ -112,7 +112,11 @@ const About = () => {
                 In addition to coding, I have a passion for creative expression.
                 I discovered that drawing is a powerful way of expressing
                 myself. Among my biggest inspirations are Gawx and Kim Jung Gi.
-                Check here some of my drawings
+              </p>
+              <p>
+                In addition to coding, I have a passion for creative expression.
+                I discovered that drawing is a powerful way of expressing
+                myself. Among my biggest inspirations are Gawx and Kim Jung Gi.
               </p>
             </div>
             <div className={'flex flex-col gap-2.5'}>
