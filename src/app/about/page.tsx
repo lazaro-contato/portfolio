@@ -6,43 +6,40 @@ const About = () => {
   return (
     <main className={'flex flex-col gap-8 px-5 pt-5 h-full'}>
       <section className={'grid grid-cols-1 gap-6 md:grid-cols-2'}>
-        <div className={'flex flex-col gap-8'}>
+        <div className={'flex flex-col gap-6'}>
           <h1 className={'font-semibold text-5xl'}>About</h1>
-          <div className={'flex flex-col gap-6'}>
-            <div>
+          <div className={'flex flex-col gap-8'}>
+            <div className={'flex flex-col gap-2.5'}>
               <p>
                 Hey, I’m José Lázaro a brazilian frontend developer with over 3
-                years of experience with Typescript, React and React Native, I
-                love creating digital experiences that captivate and engage
-                users.
+                years of experience with{' '}
+                <span className={'font-bold'}>
+                  Typescript, React and React Native and NextJS.
+                </span>
               </p>
-              <br />
               <p>
                 I am currently pursuing a graduate specialization in Software
                 Engineering at PUC Minas. My studies focus on advanced software
-                design principles, agile methodologies, and cutting-edge
-                development practices.
+                design principles, mastering software architecture, and
+                cutting-edge development practices.
               </p>
+
+              <span className={'text-2xl font-bold'}>Experience</span>
+              <ul className={'text-softBlue'}>
+                <li className={'flex flex-row items-center gap-2'}>
+                  Typescript +3 Years
+                </li>
+                <li className={'flex flex-row items-center gap-2'}>
+                  React Native +3 Years
+                </li>
+                <li className={'flex flex-row items-center gap-2'}>
+                  React JS +3 Years
+                </li>
+                <li className={'flex flex-row items-center gap-2'}>
+                  NextJS +1 Year
+                </li>
+              </ul>
             </div>
-          </div>
-          <div className={'flex flex-col gap-2.5'}>
-            <span className={'text-2xl font-bold'}>Experience</span>
-            <ul className={'text-softBlue'}>
-              <li className={'flex flex-row items-center gap-2'}>
-                Typescript +3 Years
-              </li>
-              <li className={'flex flex-row items-center gap-2'}>
-                React Native +3 Years
-              </li>
-              <li className={'flex flex-row items-center gap-2'}>
-                React JS +3 Years
-              </li>
-              <li className={'flex flex-row items-center gap-2'}>
-                NextJS +1 Year
-              </li>
-            </ul>
-          </div>
-          <div className={'flex flex-col gap-2.5'}>
             <div className={'flex flex-col gap-2.5'}>
               <span className={'text-2xl font-bold'}>Skills</span>
               <ul className={'flex flex-col gap-3'}>
@@ -66,9 +63,27 @@ const About = () => {
                     Modules.
                   </p>
                 </li>
+                <li>
+                  <p>
+                    <span className={'font-bold'}>API:</span> GraphQL, REST.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span className={'font-bold'}>
+                      Tech I Study in Personal Projects:
+                    </span>
+                    Python, Flutter, Node.js.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span className={'font-bold'}>Languages: </span>
+                    Advanced English, Native Portuguese.
+                  </p>
+                </li>
               </ul>
             </div>
-
             <div className={'flex flex-col gap-2.5'}>
               <span className={'text-2xl font-bold'}>Projects</span>
               <ul>
@@ -91,32 +106,33 @@ const About = () => {
                 </li>
               </ul>
             </div>
-
-            <span className={'text-2xl font-bold'}>Things I like</span>
-            <p>
-              In addition to coding, I have a passion for creative expression. I
-              discovered that drawing is a powerful way of expressing myself.
-              Among my biggest inspirations are Gawx and Kim Jung Gi. Check here
-              some of my drawings
-            </p>
-          </div>
-          <div className={'flex flex-col gap-2.5'}>
-            <span className={'text-xl font-bold'}>
-              Are you interested in my work? Get in touch
-            </span>
-            <p className={'flex flex-wrap gap-2'}>
-              Email me at
-              <a
-                className={
-                  'cursor-pointer flex flex-row items-center gap-2 hover:text-softBlue transition duration-200 underline'
-                }
-                href={'mailto:contato.jlazaro@gmail.com'}
-              >
-                contato.jlazaro@gmail.com <BsArrowUpRight />
-              </a>
-              <span>or follow me via my social links.</span>
-              <SocialButtons />
-            </p>
+            <div className={'flex flex-col gap-2.5'}>
+              <span className={'text-2xl font-bold'}>Things I like</span>
+              <p>
+                In addition to coding, I have a passion for creative expression.
+                I discovered that drawing is a powerful way of expressing
+                myself. Among my biggest inspirations are Gawx and Kim Jung Gi.
+                Check here some of my drawings
+              </p>
+            </div>
+            <div className={'flex flex-col gap-2.5'}>
+              <span className={'text-xl font-bold'}>
+                Are you interested in my work? Get in touch
+              </span>
+              <p className={'flex flex-wrap gap-2'}>
+                Email me at
+                <a
+                  className={
+                    'cursor-pointer flex flex-row items-center gap-2 hover:text-softBlue transition duration-200 underline'
+                  }
+                  href={'mailto:contato.jlazaro@gmail.com'}
+                >
+                  contato.jlazaro@gmail.com <BsArrowUpRight />
+                </a>
+                <span>or follow me via my social links.</span>
+                <SocialButtons />
+              </p>
+            </div>
           </div>
         </div>
 

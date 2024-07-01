@@ -11,15 +11,17 @@ const AboutSection = () => {
           <h2 className={'font-semibold text-4xl'}>About</h2>
           <p>
             Hey, I’m José Lázaro a brazilian frontend developer with over 3
-            years of experience with Typescript, React and React Native, I love
-            creating digital experiences that captivate and engage users.
+            years of experience with{' '}
+            <span className={'font-bold'}>
+              Typescript, React and React Native and NextJS.
+            </span>
           </p>
           <br />
           <p>
             I am currently pursuing a graduate specialization in Software
             Engineering at PUC Minas. My studies focus on advanced software
-            design principles, agile methodologies, and cutting-edge development
-            practices.
+            design principles, mastering software architecture, and cutting-edge
+            development practices.
           </p>
           <br />
           <p>
