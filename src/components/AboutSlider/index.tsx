@@ -44,13 +44,13 @@ const AboutSlider = () => {
   return (
     <div ref={sliderRef} className="keen-slider flex flex-row overflow-hidden">
       <div className="keen-slider__slide max-w-full">
-        <img alt="name" className={'bg-brightOrange'} src={'/image2.png'} />
+        <img alt="name" className={'bg-brightOrange'} src={'/SP1.jpg'} />
       </div>
       <div className="keen-slider__slide">
-        <img alt="name" className={'bg-brightOrange'} src={'/image2.png'} />
+        <img alt="name" className={'bg-brightOrange'} src={'/MUSEUM.jpg'} />
       </div>
       <div className="keen-slider__slide">
-        <img alt="name" className={'bg-brightOrange'} src={'/image2.png'} />
+        <img alt="name" className={'bg-brightOrange'} src={'/DIVING.jpg'} />
       </div>
     </div>
   )
