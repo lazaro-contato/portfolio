@@ -71,7 +71,7 @@ const About = () => {
                 <li>
                   <p>
                     <span className={'font-bold'}>
-                      Tech I Study in Personal Projects:
+                      Tech I Study in Personal Projects:{' '}
                     </span>
                     Python, Flutter, Node.js.
                   </p>
