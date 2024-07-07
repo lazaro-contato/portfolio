@@ -1,5 +1,4 @@
 import React from 'react'
-import ProjectItem from '@/components/ProjectItem/Index'
 import Image from 'next/image'
 
 const Work = async () => {

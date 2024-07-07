@@ -1,6 +1,4 @@
-import ProjectItem from '@/components/ProjectItem/Index'
 import React from 'react'
-import PostItem from '@/components/PostItem/Index'
 import { FaCircleUser } from 'react-icons/fa6'
 import PersonalImage from '@/components/PersonalImage'
 import SocialButtons from '@/components/SocialButtons'
