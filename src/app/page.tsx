@@ -7,6 +7,7 @@ import ArticlesSection from '../components/ArticlesSection'
 import WorkSection from '@/components/WorkSection'
 import BrazilIcon from '@/components/BrazilIcon'
 import Link from 'next/link'
+import { FaLongArrowAltRight } from 'react-icons/fa'
 
 const Home = () => {
   return (
@@ -42,13 +43,14 @@ const Home = () => {
           href={'https://www.linkedin.com/in/lazaro-contato/'}
           target="_blank"
         >
-          <span
+          <div
             className={
-              'text-5xl lg:text-7xl hover:text-softBlue transition duration-200 ease-in-out underline'
+              'flex flex-row gap-3 justify-center items-center text-center text-5xl lg:text-7xl hover:text-softBlue transition duration-200 ease-in-out hover:translate-x-[4px] transform'
             }
           >
-            Let&apos;s work together
-          </span>
+            <span>Let&apos;s work together</span>
+            <FaLongArrowAltRight className={'pt-3'} />
+          </div>
         </Link>
       </div>
     </main>
