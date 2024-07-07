@@ -34,14 +34,17 @@ const Home = () => {
       <AboutSection />
       <div
         className={
-          'flex flex-col gap-4 mt-12 items-center justify-center text-center'
+          'flex flex-col gap-10 mt-24 items-center justify-center text-center'
         }
       >
-        <span className={'text-2xl'}>Need a Dev?</span>
-        <Link href={'linkedin'}>
+        <span className={'text-2xl'}>Need a project?</span>
+        <Link
+          href={'https://www.linkedin.com/in/lazaro-contato/'}
+          target="_blank"
+        >
           <span
             className={
-              'text-5xl lg:text-7xl hover:text-softBlue transition duration-200 ease-in-out'
+              'text-5xl lg:text-7xl hover:text-softBlue transition duration-200 ease-in-out underline'
             }
           >
             Let&apos;s work together
