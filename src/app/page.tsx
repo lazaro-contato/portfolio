@@ -6,6 +6,7 @@ import AboutSection from '@/components/AboutSection'
 import ArticlesSection from '../components/ArticlesSection'
 import WorkSection from '@/components/WorkSection'
 import BrazilIcon from '@/components/BrazilIcon'
+import Link from 'next/link'
 
 const Home = () => {
   return (
@@ -31,6 +32,22 @@ const Home = () => {
       <WorkSection />
       <ArticlesSection />
       <AboutSection />
+      <div
+        className={
+          'flex flex-col gap-4 mt-12 items-center justify-center text-center'
+        }
+      >
+        <span className={'text-2xl'}>Need a Dev?</span>
+        <Link href={'linkedin'}>
+          <span
+            className={
+              'text-5xl lg:text-7xl hover:text-softBlue transition duration-200 ease-in-out'
+            }
+          >
+            Let&apos;s work together
+          </span>
+        </Link>
+      </div>
     </main>
   )
 }

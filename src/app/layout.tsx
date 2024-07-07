@@ -20,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${figtree.className} flex flex-col max-w-[1200px] w-full gap-8`}
+        className={`${figtree.className} flex flex-col max-w-[1200px] w-screen gap-8 overflow-y-scroll`}
       >
         <Header />
-        <div>{children}</div>
+        {children}
         <Footer />
       </body>
     </html>

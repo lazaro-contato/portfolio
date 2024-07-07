@@ -22,7 +22,7 @@ const Blog = async () => {
   const articles = await getArticles()
 
   return (
-    <main className={'flex flex-col gap-8 px-5'}>
+    <main className={'flex flex-col gap-8 px-5 w-full'}>
       <section className={'flex flex-col gap-4'}>
         <h1 className={'font-semibold text-5xl'}>Articles</h1>
         <p>Some of my published articles.</p>
