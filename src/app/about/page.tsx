@@ -2,6 +2,8 @@ import React from 'react'
 import { BsArrowUpRight } from 'react-icons/bs'
 import SocialButtons from '@/components/SocialButtons'
 import AboutSlider from '@/components/AboutSlider'
+import Link from 'next/link'
+import { FaLongArrowAltRight } from 'react-icons/fa'
 const About = () => {
   return (
     <main className={'flex flex-col gap-8 px-5 pt-5 h-full'}>
@@ -26,12 +28,11 @@ const About = () => {
 
               <span className={'text-2xl font-bold'}>Experience</span>
               <p>
-                In the early stages of my career, I spent almost three years
-                working with Excel, creating performance dashboards and
-                spreadsheets for a food distribution company. Seeking new
-                challenges, I transitioned into software development, which
-                eventually led me to my first international experience at an
-                American startup.
+                In the early stages of my career, I worked with Excel for 3
+                years, creating performance dashboards and spreadsheets for a
+                food distribution company. Seeking new challenges, I
+                transitioned into software development, which eventually led me
+                to my first international experience at an American startup.
               </p>
               <p>My main technologies are:</p>
               <ul className={'text-softBlue'}>
@@ -100,8 +101,7 @@ const About = () => {
                   <p>
                     <span className={'font-bold'}>E-commerce Platform: </span> I
                     am currently building a fully functional e-commerce platform
-                    using NextJS and Tailwind, with a focus on performance
-                    optimization and user experience.
+                    using NextJS and Tailwind, with a focus on user experience.
                   </p>
                 </li>
                 <li className={'flex flex-row items-center gap-2'}>
@@ -120,30 +120,26 @@ const About = () => {
               <p>
                 In addition to coding, I have a passion for creative expression.
                 I discovered that drawing is a powerful way of expressing
-                myself. Among my biggest inspirations are Gawx and Kim Jung Gi.
+                myself. Among my biggest inspirations are{' '}
+                <a
+                  href={'https://www.youtube.com/@GawxArt'}
+                  target={'_blank'}
+                  className={'underline'}
+                >
+                  Gawx
+                </a>{' '}
+                and Kim Jung Gi.
               </p>
               <p>
-                In addition to coding, I have a passion for creative expression.
-                I discovered that drawing is a powerful way of expressing
-                myself. Among my biggest inspirations are Gawx and Kim Jung Gi.
+                I really like outdoor activities, on weekends I usually travel
+                to the countryside, to fish, read, or spend time with my family.
               </p>
-            </div>
-            <div className={'flex flex-col gap-2.5'}>
-              <span className={'text-xl font-bold'}>
-                Are you interested in my work? Get in touch
-              </span>
-              <p className={'flex flex-wrap gap-2'}>
-                Email me at
-                <a
-                  className={
-                    'cursor-pointer flex flex-row items-center gap-2 hover:text-softBlue transition duration-200 underline'
-                  }
-                  href={'mailto:contato.jlazaro@gmail.com'}
-                >
-                  contato.jlazaro@gmail.com <BsArrowUpRight />
-                </a>
-                <span>or follow me via my social links.</span>
-                <SocialButtons />
+
+              <p>
+                I like to write about things I am learning, and I am currently
+                creating a personal blog called &quot;My personal barsa&quot;
+                where I will show everything I am building, including things not
+                related to code.
               </p>
             </div>
           </div>
@@ -176,6 +172,28 @@ const About = () => {
           </div>
         </div>
       </section>
+      <div
+        className={
+          'flex flex-col gap-10 mt-20 items-center justify-center text-center mb-24'
+        }
+      >
+        <span className={'text-2xl'}>
+          Are you interested in my work? Get in touch
+        </span>
+        <Link
+          href={'https://www.linkedin.com/in/lazaro-contato/'}
+          target="_blank"
+        >
+          <div
+            className={
+              'flex flex-row gap-3 justify-center items-center text-center text-5xl lg:text-7xl hover:text-softBlue transition duration-200 ease-in-out hover:translate-x-[4px] transform'
+            }
+          >
+            <span>Let&apos;s work together</span>
+            <FaLongArrowAltRight className={'pt-3'} />
+          </div>
+        </Link>
+      </div>
     </main>
   )
 }
