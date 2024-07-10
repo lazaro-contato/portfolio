@@ -49,7 +49,7 @@ const Home = () => {
             }
           >
             <span>Let&apos;s work together</span>
-            <FaLongArrowAltRight className={'pt-3'} />
+            <FaLongArrowAltRight className={'pt-2'} />
           </div>
         </Link>
       </div>

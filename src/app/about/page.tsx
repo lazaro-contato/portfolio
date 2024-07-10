@@ -25,6 +25,15 @@ const About = () => {
               </p>
 
               <span className={'text-2xl font-bold'}>Experience</span>
+              <p>
+                In the early stages of my career, I spent almost three years
+                working with Excel, creating performance dashboards and
+                spreadsheets for a food distribution company. Seeking new
+                challenges, I transitioned into software development, which
+                eventually led me to my first international experience at an
+                American startup.
+              </p>
+              <p>My main technologies are:</p>
               <ul className={'text-softBlue'}>
                 <li className={'flex flex-row items-center gap-2'}>
                   Typescript +3 Years
