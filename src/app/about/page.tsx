@@ -1,5 +1,4 @@
 import React from 'react'
-import { BsArrowUpRight } from 'react-icons/bs'
 import SocialButtons from '@/components/SocialButtons'
 import AboutSlider from '@/components/AboutSlider'
 import Link from 'next/link'
