@@ -25,13 +25,13 @@ const WorkSection = () => {
           name={'CSS-100'}
           description={'100 styles made with pure CSS and JS'}
           image={'./css-projects.jpg'}
-          url={'https://6683096b7f25b4745e0482ea--css100projects.netlify.app/'}
+          url={'https://css100projects.netlify.app/'}
         />
         <ProjectItem
           name={'CSS-100'}
           description={'100 CSS projects made with full vanilla css and js'}
           image={'./css-projects.jpg'}
-          url={'https://6683096b7f25b4745e0482ea--css100projects.netlify.app/'}
+          url={'https://css100projects.netlify.app/'}
         />
       </div>
     </section>
