@@ -22,15 +22,17 @@ const WorkSection = () => {
 
       <div className={'grid grid-cols-1 gap-4 w-full md:grid-cols-2'}>
         <ProjectItem
-          name={'CSS-100'}
-          description={'100 styles made with pure CSS and JS'}
-          image={'./css-projects.jpg'}
-          url={'https://css100projects.netlify.app/'}
+          name={'Our Time Together'}
+          description={'Create a dynamic relationship time counter.'}
+          techs={'NextJS, Typescript, Tailwind, React-hook-form'}
+          image={'./outimetogether.png'}
+          url={'https://ourtimetogetherapp.netlify.app/'}
         />
         <ProjectItem
           name={'CSS-100'}
           description={'100 CSS projects made with full vanilla css and js'}
           image={'./css-projects.jpg'}
+          techs={'Pure CSS styles and animations'}
           url={'https://css100projects.netlify.app/'}
         />
       </div>

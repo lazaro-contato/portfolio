@@ -5,6 +5,7 @@ interface ProjectItemProps {
   name: string
   description: string
   url: string
+  techs: string
 }
 
 const ProjectItem = ({
@@ -12,6 +13,7 @@ const ProjectItem = ({
   image,
   name,
   url,
+  techs,
 }: ProjectItemProps): JSX.Element => {
   return (
     <a className={'cursor-pointer'} href={url} target={'_blank'}>
@@ -23,9 +25,15 @@ const ProjectItem = ({
           }
           src={image}
         />
-        <div className={'flex flex-col'}>
+        <div className={'flex flex-col gap-2'}>
           <span className={'text-2xl font-semibold'}>{name}</span>
-          <span>{description}</span>
+          <div className={'flex flex-col'}>
+            <span>{description}</span>
+            <span>
+              <span className={'font-bold'}>Techs: </span>
+              {techs}
+            </span>
+          </div>
         </div>
       </div>
     </a>
