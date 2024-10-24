@@ -54,7 +54,13 @@ const About = () => {
               <ul className={'flex flex-col gap-3'}>
                 <li>
                   <p>
-                    <span className={'font-bold'}>JS Frameworks:</span> ReactJS,
+                    <span className={'font-bold'}>Programming Languages:</span>{' '}
+                    TypeScript, JavaScript
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span className={'font-bold'}>JS Tools:</span> ReactJS,
                     React Native and Next.js.
                   </p>
                 </li>
