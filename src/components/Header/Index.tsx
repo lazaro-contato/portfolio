@@ -32,7 +32,7 @@ const Header = (): JSX.Element => {
               href={'/work'}
               className={`inline-block w-24 hover:text-softBlue transition duration-200 ease-in-out ${pathname === '/work' && 'text-softBlue'}`}
             >
-              Work
+              Projects
             </Link>
           </li>
           <li className={'h-6'}>

@@ -5,7 +5,7 @@ const Work = async () => {
   return (
     <main className={'flex flex-col gap-8 px-5'}>
       <div className={'flex flex-col gap-4'}>
-        <h1 className={'font-semibold text-5xl'}>Work</h1>
+        <h1 className={'font-semibold text-5xl'}>Projects</h1>
       </div>
       <section className={'flex flex-col gap-6'} id="common">
         <div className={'flex flex-col gap-4 items-center mt-16'}>

@@ -16,7 +16,7 @@ const Home = () => {
         <PersonalImage />
         <div className={'flex flex-row gap-2 items-center text-softBlue'}>
           <FaCircleUser />
-          <span>José Lázaro | Frontend Engineer</span>
+          <span>José Lázaro | Software Engineer</span>
         </div>
         <h1 className={'font-semibold text-4xl'}>
           Creating digital experiences and improving creative expression. Coding

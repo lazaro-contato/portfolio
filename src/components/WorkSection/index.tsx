@@ -6,7 +6,7 @@ const WorkSection = () => {
   return (
     <section className={'flex flex-col gap-6'} id="common">
       <div className={'flex flex-row justify-between'}>
-        <h2 className={'font-semibold text-4xl'}>Work</h2>{' '}
+        <h2 className={'font-semibold text-4xl'}>Projects</h2>{' '}
         <Link
           href={'/work'}
           className={
