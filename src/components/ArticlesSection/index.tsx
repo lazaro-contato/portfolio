@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const getArticles = async (size: number): Promise<Article[]> => {
   const headers = new Headers()
-  headers.append('api-key', process.env.DEVTO_PRIVATE_KEY || '')
+  headers.append('api-key', process.env.NEXT_PUBLIC_DEVTO_PRIVATE_KEY || '')
 
   const res = await fetch(
     `https://dev.to/api/articles/me/published?per_page=${size}`,
